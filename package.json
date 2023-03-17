@@ -1,0 +1,19 @@
+{
+  "name": "listado_incidentes",
+  "version": "0.0.1",
+  "description": "api rest para listado incidentes",
+  "main": "index.js",
+  "author": "Elias Torres",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.21"
+  }
+}
