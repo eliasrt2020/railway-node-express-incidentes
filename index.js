@@ -1,4 +1,4 @@
-const port = 3000;
+const port = process.env.PORT || 3977;
 const app = require ("./app");
 const mongoose = require("mongoose");
 const urlMongoDb = 'mongodb+srv://admin:admin_4376@api-incidentes.ptlr0c9.mongodb.net/apidb';
