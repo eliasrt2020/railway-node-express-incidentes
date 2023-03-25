@@ -1,7 +1,13 @@
 const port = process.env.PORT || 3977;
 const app = require ("./app");
 const mongoose = require("mongoose");
-const urlMongoDb = 'mongodb+srv://admin:admin_4376@api-incidentes.ptlr0c9.mongodb.net/apidb';
+require('dotenv').config({path: './.env'});
+const userDb = process.env.USER_DB;
+const passDb = process.env.PASS_DB;
+const dbName = process.env.DB_NAME;
+
+const urlMongoDb = `mongodb+srv://${userDb}:${passDb}@api-incidentes.ptlr0c9.mongodb.net/${dbName}`;
+
 
 
 const conexionDb = async()=>{
